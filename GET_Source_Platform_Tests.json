@@ -29,7 +29,6 @@ describe('SourcePlatforms - GET Source Platforms', function() {
           
       
 
-
   });
 
    });
