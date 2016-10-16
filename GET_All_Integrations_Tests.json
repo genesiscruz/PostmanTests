@@ -1,0 +1,31 @@
+// Load Postman BDD && Global DataTown functions
+eval(postman.getGlobalVariable('postmanBDD'));
+eval(postman.getGlobalVariable('DataTownFunctions'));
+
+// Parse Response Body
+const testData = JSON.parse(responseBody);
+
+describe('Integrations - GET All Integrations', function() {
+  
+  it('should return a 200 OK status code', function() {
+    response.should.have.status(200);
+  });
+  
+  it('should return json and not be empty', function() {
+    response.should.be.json;
+    response.body.should.not.be.empty;
+  });
+  it('should return a data array with all integrations', function() {
+      expect(testData).to.have.property('data').that.is.an('array');
+  });
+  it('should return valid integration objects in the array', function() {
+      testData.data.forEach(function(integration) {
+          expect(integration).to.have.all.keys(['id','created_at','updated_at','pull_when_visitors_create_account','pull_when_customer_records_updated','pull_when_customers_make_order','mailing_list_id','push_purchase_behavior_targeting','push_previously_purchased_products','previously_purchased_products_to_push','push_related_product_data','related_products_to_push','push_order_and_shipping_data','push_store_info_customer_group_coupon_data','import_customers_and_orders','import_products_and_categories','pull_data_from','pull_data_to','source_account','target_account','integration_type','pull_when_order_statuses','selectable_fields','mappable_fields']);
+          expect(integration).to.have.property('id').that.is.a('number');
+          expect(integration).to.have.property('created_at').that.is.an('object');
+          testDateObject(integration.created_at);
+          expect(integration).to.have.property('updated_at').that.is.an('object');
+          testDateObject(integration.updated_at);
+      });
+  });
+});

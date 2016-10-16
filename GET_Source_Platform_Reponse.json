@@ -1,0 +1,21 @@
+{
+  "data": {
+    "id": 1,
+    "name": "BigCommerce",
+    "logo": "bigcommerce.png",
+    "options": [
+      {
+        "key": "username",
+        "label": "Username"
+      },
+      {
+        "key": "store_url",
+        "label": "Store URL"
+      },
+      {
+        "key": "api_key",
+        "label": "API key"
+      }
+    ]
+  }
+}
