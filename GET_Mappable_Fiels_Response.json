@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Email",
+      "enabled_by_default": 1
+    },
+    {
+      "id": 2,
+      "name": "Full Name",
+      "enabled_by_default": 1
+    },
+    {
+      "id": 3,
+      "name": "Billing First Name",
+      "enabled_by_default": 1
+    },
+    {
+      "id": 4,
+      "name": "Billing Last Name",
+      "enabled_by_default": 1
+    },
+    {
+      "id": 5,
+      "name": "Billing Address 1",
+      "enabled_by_default": 1
+    },
+    {
+      "id": 6,
+      "name": "Billing Address 2",
+      "enabled_by_default": 1
+    },
+    {
+      "id": 7,
+      "name": "Billing City",
+      "enabled_by_default": 1
+    },
+    {
+      "id": 8,
+      "name": "Billing Country",
+      "enabled_by_default": 1
+    },
+    {
+      "id": 9,
+      "name": "Billing State",
+      "enabled_by_default": 1
+    },
+    {
+      "id": 10,
+      "name": "Billing Zip",
+      "enabled_by_default": 1
+    },
+    {
+      "id": 11,
+      "name": "Notes",
+      "enabled_by_default": 0
+    },
+    {
+      "id": 12,
+      "name": "Registration IP Address",
+      "enabled_by_default": 0
+    },
+    {
+      "id": 13,
+      "name": "Company",
+      "enabled_by_default": 0
+    }
+  ]
+}
