@@ -5,25 +5,22 @@ eval(postman.getGlobalVariable('DataTownFunctions'));
 // Parse Response Body
 const mapData = JSON.parse(responseBody);
 
-describe('Mappable Fields - GET Mappable Fields', function() {
-  
-  it('should return a 200 OK status code', function() {
+describe('Mappable Fields - GET Mappable Fields', function(){
+  it('should return a 200 OK status code', function(){
     response.should.have.status(200);
   });
-  
-  it('should return json and not be empty', function() {
+  it('should return json and not be empty', function(){
     response.should.be.json;
     response.body.should.not.be.empty;
   });
-  it('should return a data array with all mappableFileds', function() {
-      expect(testData).to.have.property('data').that.is.an('array');
+  it('should return a data array with all mappableFileds', function(){
+      expect(mapData).to.have.property('data').that.is.an('array');
   });
   it('should return valid mappableFiled objects in the array', function(){
       mapData.data.forEach(function(mappableFiled){
           expect(mappableFiled).to.have.all.keys(['id','name','enabled_by_default']);
           expect(mappableFiled).to.have.property('id').that.is.a('number');
           expect(mappableFiled).to.have.property('name').that.is.an('string');
-          
       });
-  });
+   });
 });

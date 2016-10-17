@@ -1,30 +1,22 @@
 // Load Postman BDD && Global DataTown functions
 eval(postman.getGlobalVariable('postmanBDD'));
 eval(postman.getGlobalVariable('DataTownFunctions'));
-
 // Parse Response Body
 const testData = JSON.parse(responseBody);
 
-describe('Integrations - GET Integrations', function(){
- 
+describe('Integrations - GET Integration', function(){
  it('should return a 200 OK status code', function(){
    response.should.have.status(200);
- });
-
- 
+ }); 
  it('should return json and not be empty', function(){
    response.should.be.json;
    response.body.should.not.be.empty;
  });
-
-
  it('should return a data object with all integrations', function(){
      expect(testData).to.have.property('data').that.is.an('object');
  });
- 
 //The response is an object that has objects
  it('should return valid integration objects in the object', function(){
-  
       expect(testData.data).to.have.all.keys(
       'id','created_at','updated_at','pull_when_visitors_create_account',
       'pull_when_customer_records_updated','pull_when_customers_make_order','mailing_list_id',
@@ -54,5 +46,4 @@ describe('Integrations - GET Integrations', function(){
       expect(testData.data).to.have.property('pull_data_from').that.is.a('null');
       expect(testData.data).to.have.property('pull_data_to').that.is.a('null');
       });
-
 });
