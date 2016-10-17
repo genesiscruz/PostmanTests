@@ -5,7 +5,7 @@ eval(postman.getGlobalVariable('DataTownFunctions'));
 // Parse Response Body
 const sourcePlatformData = JSON.parse(responseBody);
 
-describe('SourcePlatforms - GET Source Platforms', function() {
+describe('SourcePlatforms - GET Source Platforms', function(){
   
   it('should return a 200 OK status code', function() {
     response.should.have.status(200);
@@ -15,7 +15,7 @@ describe('SourcePlatforms - GET Source Platforms', function() {
     response.should.be.json;
     response.body.should.not.be.empty;
   });
-   it('should return a data object with  source platforms', function() {
+   it('should return a data object with  source platforms', function(){
       expect(sourcePlatformData).to.have.property('data').that.is.an('object');
   });
   
@@ -29,6 +29,6 @@ describe('SourcePlatforms - GET Source Platforms', function() {
               expect(option).to.have.all.keys(['key', 'label']);
               expect(option).to.have.property('key').that.is.an('string');
               expect(option).to.have.property('label').that.is.an('string');
-          });
-       });
-    });
+        });
+     });
+  });
