@@ -7,11 +7,11 @@ const sourcePlatformData = JSON.parse(responseBody);
 
 describe('SourcePlatforms - GET Source Platforms', function(){
   
-  it('should return a 200 OK status code', function() {
+  it('should return a 200 OK status code', function(){
     response.should.have.status(200);
   });
   
-  it('should return json and not be empty', function() {
+  it('should return json and not be empty', function(){
     response.should.be.json;
     response.body.should.not.be.empty;
   });
