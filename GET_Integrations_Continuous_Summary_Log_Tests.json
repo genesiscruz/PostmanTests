@@ -13,13 +13,13 @@ describe('Integrations - GET Integrations - Continuous Summary Log', function(){
     response.should.be.json;
     response.body.should.not.be.empty;
   });
-  it('should return a totals objects with all orde customer, product and selecteable field statuses', function(){
+  it('should return an object called totals with all order customer, product and selecteable field statuses', function(){
       expect(testData).to.have.property('totals').that.is.an('object');
   });
   it('should return an array called errors', function(){
       expect(testData).to.have.property('errors').that.is.an('array');
   });
-  it('should return valid integration objects in the object', function(){
+  it('should return valid status data in the object', function(){
       expect(testData.totals).to.have.all.keys(
       'customer_successes','customer_failures','order_successes','order_failures','order_item_successes',
       'order_item_failures','product_successes','product_failures','product_category_successes',
