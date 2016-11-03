@@ -1,0 +1,379 @@
+{
+  "data": {
+    "id": 4,
+    "created_at": {
+      "date": "2016-11-02 21:19:16.000000",
+      "timezone_type": 3,
+      "timezone": "UTC"
+    },
+    "updated_at": {
+      "date": "2016-11-03 16:47:29.000000",
+      "timezone_type": 3,
+      "timezone": "UTC"
+    },
+    "pull_when_visitors_create_account": 1,
+    "pull_when_customer_records_updated": 1,
+    "pull_when_customers_make_order": 1,
+    "mailing_list_id": 3185719,
+    "push_purchase_behavior_targeting": 1,
+    "push_previously_purchased_products": 0,
+    "previously_purchased_products_to_push": 3,
+    "push_related_product_data": 1,
+    "related_products_to_push": 3,
+    "push_order_and_shipping_data": 1,
+    "push_store_info_customer_group_coupon_data": 1,
+    "import_customers_and_orders": 0,
+    "import_products_and_categories": 0,
+    "pull_data_from": null,
+    "pull_data_to": null,
+    "status": {
+      "activated": true,
+      "status": "Active",
+      "executed_at": "2016-11-03 16:48:25"
+    },
+    "source_account": {
+      "data": {
+        "id": 1,
+        "name": "BigCommerce store 1",
+        "active": true,
+        "created_at": {
+          "date": "2016-11-02 21:19:16.000000",
+          "timezone_type": 3,
+          "timezone": "UTC"
+        },
+        "updated_at": {
+          "date": "2016-11-02 21:19:16.000000",
+          "timezone_type": 3,
+          "timezone": "UTC"
+        },
+        "connection_status": "Inactive",
+        "activation_status": {
+          "activated": false,
+          "connected": false,
+          "status": "Store Removed",
+          "executed_at": "2016-11-03 15:57:51"
+        },
+        "last_connection": {
+          "date": "2016-11-03 16:46:15.000000",
+          "timezone_type": 3,
+          "timezone": "UTC"
+        },
+        "last_activated": {
+          "date": "2016-09-25 02:14:55.000000",
+          "timezone_type": 3,
+          "timezone": "UTC"
+        },
+        "last_deactivated": {
+          "date": "2016-11-03 15:57:51.000000",
+          "timezone_type": 3,
+          "timezone": "UTC"
+        },
+        "last_failed": {
+          "date": "2016-09-24 02:14:55.000000",
+          "timezone_type": 3,
+          "timezone": "UTC"
+        },
+        "platform": {
+          "data": {
+            "id": 1,
+            "name": "BigCommerce",
+            "logo": "bigcommerce.png",
+            "options": [
+              {
+                "key": "auth_token",
+                "label": "Auth Token"
+              },
+              {
+                "key": "store_hash",
+                "label": "Store Hash"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "target_account": {
+      "data": {
+        "id": 1,
+        "name": "Campaigner account 1",
+        "active": true,
+        "created_at": {
+          "date": "2016-11-02 21:19:16.000000",
+          "timezone_type": 3,
+          "timezone": "UTC"
+        },
+        "updated_at": {
+          "date": "2016-11-02 21:19:16.000000",
+          "timezone_type": 3,
+          "timezone": "UTC"
+        },
+        "connection_status": "Active",
+        "activation_status": {
+          "activated": true,
+          "status": "Activated",
+          "connected": true,
+          "executed_at": "2016-09-27 02:14:55"
+        },
+        "last_connection": {
+          "date": "2016-11-03 16:48:26.000000",
+          "timezone_type": 3,
+          "timezone": "UTC"
+        },
+        "last_activated": {
+          "date": "2016-09-27 02:14:55.000000",
+          "timezone_type": 3,
+          "timezone": "UTC"
+        },
+        "last_deactivated": {
+          "date": "2016-09-22 02:14:55.000000",
+          "timezone_type": 3,
+          "timezone": "UTC"
+        },
+        "last_failed": {
+          "date": "2016-09-22 12:13:11.000000",
+          "timezone_type": 3,
+          "timezone": "UTC"
+        },
+        "platform": {
+          "data": {
+            "id": 1,
+            "name": "Campaigner",
+            "logo": "campaigner.png",
+            "options": [
+              {
+                "key": "api_key",
+                "label": "API Key"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "integration_type": {
+      "data": {
+        "id": 1,
+        "label": "Continuous",
+        "description": "An integration that will be reused and scheduled on certain events or at certain intervals."
+      }
+    },
+    "pull_when_order_statuses": {
+      "data": [
+        {
+          "id": 7,
+          "order_status_id": 7,
+          "platform_id": 1,
+          "platform_status_id": "11",
+          "label": "awaiting_fulfillment",
+          "description": "Awaiting Fulfillment"
+        },
+        {
+          "id": 8,
+          "order_status_id": 8,
+          "platform_id": 1,
+          "platform_status_id": "2",
+          "label": "shipped",
+          "description": "Shipped"
+        },
+        {
+          "id": 5,
+          "order_status_id": 5,
+          "platform_id": 1,
+          "platform_status_id": "9",
+          "label": "awaiting_shipment",
+          "description": "Awaiting Shipment"
+        },
+        {
+          "id": 6,
+          "order_status_id": 6,
+          "platform_id": 1,
+          "platform_status_id": "10",
+          "label": "completed",
+          "description": "Completed"
+        },
+        {
+          "id": 4,
+          "order_status_id": 4,
+          "platform_id": 1,
+          "platform_status_id": "8",
+          "label": "awaiting_pickup",
+          "description": "Awaiting Pickup"
+        },
+        {
+          "id": 3,
+          "order_status_id": 3,
+          "platform_id": 1,
+          "platform_status_id": "7",
+          "label": "awaiting_payment",
+          "description": "Awaiting Payment"
+        }
+      ]
+    },
+    "selectable_fields": {
+      "data": [
+        {
+          "id": 6,
+          "name": "DT_LAST_ORDERED_PRODUCT_IMGURL",
+          "description": "The image url of the last ordered product",
+          "enabled_by_default": 1,
+          "allow_multiples": 1,
+          "multiples_up_to": 6
+        },
+        {
+          "id": 15,
+          "name": "DT_LAST_ORDER_SHIP_LAST_NAME",
+          "description": "The last name on the last order",
+          "enabled_by_default": 1,
+          "allow_multiples": 0,
+          "multiples_up_to": 0
+        },
+        {
+          "id": 22,
+          "name": "DT_LAST_ORDER_PRODUCT_CATEGORY",
+          "description": "The category of the item purchased on the last order",
+          "enabled_by_default": 1,
+          "allow_multiples": 0,
+          "multiples_up_to": 0
+        },
+        {
+          "id": 24,
+          "name": "DT_LAST_ORDER_TRACKING_NUMBER",
+          "description": "The tracking number of the last order",
+          "enabled_by_default": 1,
+          "allow_multiples": 0,
+          "multiples_up_to": 0
+        },
+        {
+          "id": 18,
+          "name": "DT_LAST_ORDER_SHIP_CITY",
+          "description": "The city on the address on the last order",
+          "enabled_by_default": 1,
+          "allow_multiples": 0,
+          "multiples_up_to": 0
+        },
+        {
+          "id": 7,
+          "name": "DT_RELATED_PRODUCT_NAME",
+          "description": "The name of a product related to a previously purchased product",
+          "enabled_by_default": 1,
+          "allow_multiples": 1,
+          "multiples_up_to": 6
+        },
+        {
+          "id": 16,
+          "name": "DT_LAST_ORDER_SHIP_ADDRESS_1",
+          "description": "The first line of the address on the last order",
+          "enabled_by_default": 1,
+          "allow_multiples": 0,
+          "multiples_up_to": 0
+        },
+        {
+          "id": 1,
+          "name": "DT_LAST_ORDERED_PRODUCT_NAME",
+          "description": "The name of the last ordered product",
+          "enabled_by_default": 1,
+          "allow_multiples": 1,
+          "multiples_up_to": 6
+        },
+        {
+          "id": 3,
+          "name": "DT_LAST_ORDERED_PRODUCT_PRICE",
+          "description": "The price of the last ordered product",
+          "enabled_by_default": 1,
+          "allow_multiples": 1,
+          "multiples_up_to": 6
+        },
+        {
+          "id": 5,
+          "name": "DT_LAST_ORDERED_PRODUCT_URL",
+          "description": "The URL of the last ordered product",
+          "enabled_by_default": 1,
+          "allow_multiples": 1,
+          "multiples_up_to": 6
+        },
+        {
+          "id": 9,
+          "name": "DT_RELATED_PRODUCT_PRICE",
+          "description": "The price of a product related to a previously purchased product",
+          "enabled_by_default": 1,
+          "allow_multiples": 1,
+          "multiples_up_to": 6
+        },
+        {
+          "id": 11,
+          "name": "DT_RELATED_PRODUCT_URL",
+          "description": "The URL of a product related to a previously purchased product",
+          "enabled_by_default": 1,
+          "allow_multiples": 1,
+          "multiples_up_to": 6
+        },
+        {
+          "id": 12,
+          "name": "DT_RELATED_PRODUCT_IMGURL",
+          "description": "The image URL of a product related to a previously purchased product",
+          "enabled_by_default": 1,
+          "allow_multiples": 1,
+          "multiples_up_to": 6
+        },
+        {
+          "id": 13,
+          "name": "DT_LAST_ORDER_SHIP_METHOD",
+          "description": "The shipping method of the last order",
+          "enabled_by_default": 1,
+          "allow_multiples": 0,
+          "multiples_up_to": 0
+        },
+        {
+          "id": 14,
+          "name": "DT_LAST_ORDER_SHIP_FIRST_NAME",
+          "description": "The first name on the last order",
+          "enabled_by_default": 1,
+          "allow_multiples": 0,
+          "multiples_up_to": 0
+        },
+        {
+          "id": 17,
+          "name": "DT_LAST_ORDER_SHIP_ADDRESS_2",
+          "description": "The second line of the address on the last order",
+          "enabled_by_default": 1,
+          "allow_multiples": 0,
+          "multiples_up_to": 0
+        },
+        {
+          "id": 19,
+          "name": "DT_LAST_ORDER_SHIP_STATE",
+          "description": "The state on the address on the last order",
+          "enabled_by_default": 1,
+          "allow_multiples": 0,
+          "multiples_up_to": 0
+        },
+        {
+          "id": 20,
+          "name": "DT_LAST_ORDER_SHIP_ZIP",
+          "description": "The zip code on the address on the last order",
+          "enabled_by_default": 1,
+          "allow_multiples": 0,
+          "multiples_up_to": 0
+        },
+        {
+          "id": 21,
+          "name": "DT_LAST_ORDER_SHIP_COUNTRY",
+          "description": "The country of the address on the last order",
+          "enabled_by_default": 1,
+          "allow_multiples": 0,
+          "multiples_up_to": 0
+        },
+        {
+          "id": 23,
+          "name": "DT_LAST_ORDER_PURCHASED_PRODUCTS",
+          "description": "Listing of all products purchased in customer's most recent order. Product names separated by comma.",
+          "enabled_by_default": 1,
+          "allow_multiples": 0,
+          "multiples_up_to": 0
+        }
+      ]
+    },
+    "mappable_fields": {
+      "data": []
+    }
+  }
+}
