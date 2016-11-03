@@ -1,0 +1,44 @@
+// Load Postman BDD && Global DataTown functions
+eval(postman.getGlobalVariable('postmanBDD'));
+eval(postman.getGlobalVariable('DataTownFunctions'));
+
+// Parse Response Body
+const testData = JSON.parse(responseBody);
+
+describe('Integrations - GET Integrations - Continuous Summary Log', function(){
+  it('should return a 200 OK status code', function(){
+    response.should.have.status(200);
+  }); 
+  it('should return json and not be empty', function(){
+    response.should.be.json;
+    response.body.should.not.be.empty;
+  });
+  it('should return a totals objects with all orde customer, product and selecteable field statuses', function(){
+      expect(testData).to.have.property('totals').that.is.an('object');
+  });
+  it('should return an array called errors', function(){
+      expect(testData).to.have.property('errors').that.is.an('array');
+  });
+  it('should return valid integration objects in the object', function(){
+      expect(testData.totals).to.have.all.keys(
+      'customer_successes','customer_failures','order_successes','order_failures','order_item_successes',
+      'order_item_failures','product_successes','product_failures','product_category_successes',
+      'product_category_failures','selectable_field_successes','selectable_field_failures',
+      'mappable_field_successes','mappable_field_failures' 
+      );
+      expect(testData.totals).to.have.property('customer_successes').that.is.a('number');
+      expect(testData.totals).to.have.property('customer_failures').that.is.a('number');
+      expect(testData.totals).to.have.property('order_successes').that.is.a('number');
+      expect(testData.totals).to.have.property('order_failures').that.is.an('number');
+      expect(testData.totals).to.have.property('order_item_successes').that.is.an('number');
+      expect(testData.totals).to.have.property('order_item_failures').that.is.an('number');
+      expect(testData.totals).to.have.property('product_successes').that.is.an('number');
+      expect(testData.totals).to.have.property('product_failures').that.is.an('number');
+      expect(testData.totals).to.have.property('product_category_successes').that.is.an('number');
+      expect(testData.totals).to.have.property('product_category_failures').that.is.an('number');
+      expect(testData.totals).to.have.property('selectable_field_successes').that.is.an('number');
+      expect(testData.totals).to.have.property('selectable_field_failures').that.is.an('number');
+      expect(testData.totals).to.have.property('mappable_field_successes').that.is.an('number');
+      expect(testData.totals).to.have.property('mappable_field_failures').that.is.an('number');
+    });
+});
