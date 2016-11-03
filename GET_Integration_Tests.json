@@ -18,7 +18,7 @@ describe('Integrations - GET Integration', function(){
 //The response is an object that has objects
  it('should return valid integration objects in the object', function(){
       expect(testData.data).to.have.all.keys(
-      'id','created_at','updated_at','pull_when_visitors_create_account',
+      'id','created_at','updated_at','status','pull_when_visitors_create_account',
       'pull_when_customer_records_updated','pull_when_customers_make_order','mailing_list_id',
       'push_purchase_behavior_targeting','push_previously_purchased_products','previously_purchased_products_to_push',
       'push_related_product_data','related_products_to_push','push_order_and_shipping_data',
