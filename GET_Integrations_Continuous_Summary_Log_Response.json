@@ -1,0 +1,19 @@
+{
+  "totals": {
+    "customer_successes": 21,
+    "customer_failures": 4,
+    "order_successes": 21,
+    "order_failures": 4,
+    "order_item_successes": 186,
+    "order_item_failures": 30,
+    "product_successes": 158,
+    "product_failures": 23,
+    "product_category_successes": 121,
+    "product_category_failures": 19,
+    "selectable_field_successes": 361,
+    "selectable_field_failures": 53,
+    "mappable_field_successes": 200,
+    "mappable_field_failures": 29
+  },
+  "errors": []
+}
